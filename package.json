@@ -9,12 +9,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    {#if_eq UI "ant-design-vue"}}
+    "ant-design-vue": "4.x",
+    {{/if_eq}}
+    {#if_eq UI "element-plus"}
+    "element-plus": "^2.7.5",
+    {{/if_eq}}
     "pinia": "^2.1.7",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
+    {{#if_eq import "demand"}}
+    "unplugin-auto-import": "^0.17.6",
+    "unplugin-vue-components": "^0.27.0",
+    {{/if_eq}}
     "vite": "^5.2.8"
   }
 }
