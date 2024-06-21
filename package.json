@@ -12,7 +12,7 @@
     {{#if_eq UI "ant-design-vue"}}
     "ant-design-vue": "4.x",
     {{/if_eq}}
-    {#if_eq UI "element-plus"}
+    {{#if_eq UI "element-plus"}}
     "element-plus": "^2.7.5",
     {{/if_eq}}
     "pinia": "^2.1.7",
