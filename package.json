@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    {#if_eq UI "ant-design-vue"}}
+    {{#if_eq UI "ant-design-vue"}}
     "ant-design-vue": "4.x",
     {{/if_eq}}
     {#if_eq UI "element-plus"}
